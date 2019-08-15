@@ -8,7 +8,6 @@ import Total from './components/Total';
 
 
 const App = (props) => {
-  console.log(props.car)
   return (
     <div className="boxes">
       <div className="box">
@@ -24,7 +23,6 @@ const App = (props) => {
 };
 
 const mapStateToProps = state => {
-  console.log('state inside the mapState fn', state)
   return {
     car: state.car,
     store: state.store,

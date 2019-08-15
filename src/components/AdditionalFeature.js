@@ -4,7 +4,6 @@ import { connect } from 'react-redux'
 import { buyItem } from './actions'
 
 const AdditionalFeature = props => {
-
   const add = (e) => {
     e.preventDefault()
     props.buyItem({ id: props.feature.id, name: props.feature.name, price: props.feature.price })
@@ -21,8 +20,8 @@ const AdditionalFeature = props => {
 
 const mapStateToProps = (state) => {
   return {
+    // features: state.car.features
   };
 };
-
 
 export default connect(mapStateToProps, { buyItem })(AdditionalFeature);
